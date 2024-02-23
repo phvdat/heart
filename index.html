@@ -11,12 +11,12 @@
 
 <body>
 	<audio loop autoplay id="audio">
-		<source src="assets/yeuquai.mp3" type="audio/mp3" />
+		<source src="assets/embeiu.mp3" type="audio/mp3" />
 	</audio>
 
 
-	<div class="title" onclick="playAudio()" ontouchstart="playAudio()">
-		<img class="img" src="image.jpg" alt="JUNO_OKYO" />
+	<div class="title" onclick="toggleAudio()" ontouchstart="toggleAudio()">
+		<img class="img" src="assets/image.jpg" alt="JUNO_OKYO" />
 		<canvas id="pinkboard"></canvas>
 	</div>
 
@@ -26,8 +26,15 @@
 	<script src="js/universe.js"></script>
 	<script>
 		const audioEle = document.getElementById('audio');
-		function playAudio() {
-			audioEle.play();
+		let isPlaying = false;
+
+		function toggleAudio() {
+			if (isPlaying) {
+				audioEle.pause();
+			} else {
+				audioEle.play();
+			}
+			isPlaying = !isPlaying;
 		}
 	</script>
 </body>
