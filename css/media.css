@@ -1,0 +1,9 @@
+.transition-image {
+  opacity: 0;
+  position: absolute;
+  transition: opacity 0.6s ease-in-out;
+}
+
+.transition-image.active {
+  opacity: 1;
+}

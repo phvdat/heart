@@ -7,16 +7,29 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600&display=swap" rel="stylesheet" />
 	<link href="css/main.css" rel="stylesheet" />
+	<link href="css/media.css" rel="stylesheet" />
+	<title>Em pé</title>
+	<link rel="icon" type="image/x-icon" href="assets/favicon.jpg">
 </head>
 
-<body>
+<body onclick="toggleAudio()" ontouchstart="toggleAudio()">
 	<audio loop autoplay id="audio">
-		<source src="assets/embeiu.mp3" type="audio/mp3" />
+		<source src="assets/audio/embeiu.mp3" type="audio/mp3" />
 	</audio>
 
 
-	<div class="title" onclick="toggleAudio()" ontouchstart="toggleAudio()">
-		<img class="img" src="assets/image.jpg" alt="JUNO_OKYO" />
+	<div class="title">
+		<img class="img transition-image active" src="assets/image/image.jpg" alt="JUNO_OKYO" />
+		<img class="img transition-image" src="assets/image/2.jpg" alt="JUNO_OKYO" />
+		<img class="img transition-image" src="assets/image/3.jpg" alt="JUNO_OKYO" />
+		<img class="img transition-image" src="assets/image/4.mov" alt="JUNO_OKYO" />
+		<img class="img transition-image" src="assets/image/5.jpg" alt="JUNO_OKYO" />
+		<img class="img transition-image" src="assets/image/6.jpg" alt="JUNO_OKYO" />
+		<img class="img transition-image" src="assets/image/7.mov" alt="JUNO_OKYO" />
+		<img class="img transition-image" src="assets/image/8.jpg" alt="JUNO_OKYO" />
+		<img class="img transition-image" src="assets/image/9.jpg" alt="JUNO_OKYO" />
+		<img class="img transition-image" src="assets/image/10.jpg" alt="JUNO_OKYO" />
+		<img class="img transition-image" src="assets/image/11.jpg" alt="JUNO_OKYO" />
 		<canvas id="pinkboard"></canvas>
 	</div>
 
@@ -24,18 +37,7 @@
 	<script src="js/main.js"></script>
 	<script src="js/particle.js"></script>
 	<script src="js/universe.js"></script>
-	<script>
-		const audioEle = document.getElementById('audio');
-		let isPlaying = false;
-
-		function toggleAudio() {
-			if (isPlaying) {
-				audioEle.pause();
-			} else {
-				audioEle.play();
-			}
-			isPlaying = !isPlaying;
-		}
+	<script src="js/media.js">
 	</script>
 </body>
 
