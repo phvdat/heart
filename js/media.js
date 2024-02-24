@@ -40,7 +40,7 @@ function changeImage() {
 }
 
 // Đặt thời gian thay đổi hình ảnh (đơn vị là mili-giây)
-const imageChangeInterval = 3000; // 5 giây
+const imageChangeInterval = 5000; // 5 giây
 
 // Bắt đầu thay đổi hình ảnh
 setInterval(changeImage, imageChangeInterval);

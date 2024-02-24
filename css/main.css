@@ -85,12 +85,26 @@ canvas {
   width: 600px;
   height: 600px;
 }
-
+@keyframes zoomInCanvas {
+  0% {
+    transform: scale(1);
+  }
+  45% {
+    transform: scale(1.2);
+  }
+  55% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 #pinkboard {
   position: relative;
   top: 1%;
   left: 0%;
   height: 880px;
+  animation: zoomInCanvas 5s ease-in-out infinite;
 }
 
 .STARDUST1 {
