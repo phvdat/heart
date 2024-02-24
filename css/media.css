@@ -31,11 +31,11 @@ body {
 .bubbling-heart div {
   z-index: 100;
   position: fixed;
-  bottom: 0%;
+  top: 10%;
   left: 50%;
   transform: translate(-50%, 25vh) scale(0);
   opacity: 0;
-  animation: bubbleUp 3s infinite;
+  animation: bubbleUp 5s infinite;
 }
 .bubbling-heart div .fa {
   transform: translateX(12.5vw) rotate(25deg);
@@ -77,19 +77,34 @@ body {
 .bubbling-heart div:nth-child(7) .fa {
   animation-delay: 6s;
 }
+.bubbling-heart div:nth-child(8) {
+  animation-delay: 2.8s;
+}
+.bubbling-heart div:nth-child(8) .fa {
+  animation-delay: 7s;
+}
+.bubbling-heart div:nth-child(9) {
+  animation-delay: 3.2s;
+}
+.bubbling-heart div:nth-child(9) .fa {
+  animation-delay: 8s;
+}
+.bubbling-heart div:nth-child(10) {
+  animation-delay: 3.6s;
+}
+.bubbling-heart div:nth-child(10) .fa {
+  animation-delay: 9s;
+}
 @keyframes bubbleUp {
   50% {
     opacity: 0.3;
   }
   100% {
-    transform: translate(-50%, -90vh) scale(2);
+    transform: translate(-50%, -10vh) scale(2);
   }
 }
 @keyframes oscillate {
-  30% {
+  50% {
     transform: translateX(-20.5vw) rotate(-25deg);
-  }
-  70% {
-    transform: translateX(20.5vw) rotate(-25deg);
   }
 }
