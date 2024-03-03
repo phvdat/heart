@@ -23,6 +23,14 @@ document.onkeydown = function (e) {
 		toggleAudio();
 	}
 };
+$(window).focus(function () {
+	audioEle.play();
+});
+
+$(window).blur(function () {
+	audioEle.pause();
+});
+
 
 let currentImageIndex = 0;
 const imageElements = document.querySelectorAll('.transition-image');
